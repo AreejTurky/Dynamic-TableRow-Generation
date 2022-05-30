@@ -19,22 +19,11 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        List<String> temp= new ArrayList<>();
-       /* try
-        {
-            AssetManager am= getAssets();
-            InputStream is= am.open("text.txt ");
-            Scanner sc = new Scanner(is);
-            while (sc.hasNextLine()) {
-                temp.add(sc.nextLine());
-            }
-        }
-        catch (Exception e) { System.out.println("ERROR!!!: "+e); }
 
-        */
 
         addTableRow();
     }
+    
     private void addTableRow() {
         LayoutInflater inflater = getLayoutInflater();
         TableLayout tableLayout = findViewById(R.id.tableLayout);
